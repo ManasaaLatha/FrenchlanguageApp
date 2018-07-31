@@ -1,0 +1,400 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.customV{
+    width:50%!important;
+    height:40px;
+    border:1px;
+    color:white;
+    word-wrap: break-word;
+             font-weight: bold;
+       font-size:12px;
+    background-color: rgb(199, 139, 139);
+}
+.topbuttonsinmenu{
+                          
+  height:8% !important;
+  width:100% !important;
+  
+  
+  
+}
+.colclasscustom_menu{
+  display: inline-block;
+  //             flex: 1;
+  //border: 4px solid #757575;
+  margin-bottom:10px;
+ // height:200% !important;
+  width:28% !important;
+  //height:60px !important;
+border-right: 0.009em solid rgb(165, 162, 163);
+border-bottom: 0.009em solid rgb(165, 162, 163);
+  height:120px !important;
+}
+
+
+
+.footerButtn{
+    width:50%!important;
+    height:40px;
+    border:1px;
+    color:rgb(26, 5, 5);
+             font-weight: bold;
+    background-color: color($colors,customfooterButtnColor);
+}
+
+.classnameButtCicked{
+    background-color: color($colors,ycBlue);
+  }
+        
+.newfond{
+
+    font-size: 12px
+            }
+        
+            
+                    
+                        .topbutton{
+                          
+                          height:8% !important;
+                          width:100% !important;
+                        }
+            .customSli{
+                display: inline-block;
+                width:20% !important;
+                height:15% !important;
+            }
+            
+         
+            
+            .circular--square {
+                border-radius: 90%;
+                margin-top: 15px;
+                width:40%!important;               
+                height:15% !important;
+              }
+              .circular_category_item {
+                border-radius: 20%;
+                margin-top: 15px;
+                max-width:40% !important;               
+                max-height:15% !important;
+              }
+
+              .newfond1{
+
+                font-size: 6px;
+                color:white;
+                font-weight: bold;
+                height:30% !important;
+                width:100% !important;
+                float:left;
+                text-align:left;
+                        }
+
+            
+
+
+            ion-row {
+                text-align: left!important;
+            }
+            
+            
+            
+            .menu-right ion-content,.menu-right .item-complex .item-content{
+              color:#000000;
+              background-color: #EF473A;
+              }
+            
+            .node-menu {
+              position: relative;
+              width: 150px;
+            }
+            
+            
+            .myBg{
+              background-color:#ddd;
+            }
+            tree-internal ul {
+              list-style-type: none;
+              padding: 10px 0 3px 0px;
+              margin: 10px 0px 0px 10px;
+              font-family: $font-family-base;
+              color:#ff00ff;
+              
+            }
+            
+            tree-internal li {
+              margin: 0px 0px 0px 10px;
+            
+              color:#ff00ff;
+              
+              list-style: none;
+            }
+            
+            tree-internal .over-drop-target {
+              border: 4px solid #757575;
+              transition: padding 0.2s ease-out;
+              padding: 5px;
+              border-radius: 5%;
+            }
+            
+            
+            
+            
+            tree-internal .tree {
+              box-sizing: border-box;
+              text-align: left;
+              font-family: $font-family-base;
+              font-style: normal;
+              font-weight: 300;
+            //   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-size: 16px; color: white;
+              //font:"font-weight: bold; font-size: 50em; color: white;" ;
+            }
+            
+            tree-internal .tree li {
+              list-style: none;
+              cursor: default;
+               text-align: left;
+              font-family: normal;
+              font-style: normal;
+              font-weight: 300;
+              
+              
+              font-size: 16px; color: rgb(39, 63, 173);
+            }
+            
+            tree-internal .tree li div {
+              display: inline-block;
+              box-sizing: border-box;
+              font-size: 15px; color: white;
+              
+            }
+            
+            tree-internal .tree .node-value {
+              display: inline-block;
+              color: color($colors, color4);;      }
+            
+            tree-internal .tree .node-value:after {
+              display: block;
+              padding-top: -3px;
+              width: 0;
+              height: 2px;
+              background-color: #212121;
+              content: '';
+              transition: width 0.3s;
+            }
+            
+            tree-internal .tree .node-value:hover:after {
+              width: 100%;
+            }
+            
+            tree-internal .tree .node-left-menu {
+              display: inline-block;
+              height: 100%;
+              width: auto;
+            }
+            
+            tree-internal .tree .node-left-menu span:before {
+              content: '\2026';
+              color: white;
+            }
+            
+            tree-internal .tree .node-selected:after {
+              width: 100%;
+            }
+            
+            tree-internal .tree .folding {
+              width: 25px;
+              display: inline-block;
+              line-height: 1px;
+              padding: 0 5px;
+              font-weight: bold;
+            }
+            
+            tree-internal .tree .folding.node-collapsed {
+              cursor: pointer;
+              font-size: 1.5em;
+              padding: 10px 50px 0px 0px;
+            }
+            
+            tree-internal .tree .folding.node-collapsed:before {
+              content: '\25B6';
+              color: #757575;
+              padding: -35px;
+              font-size: 1.5em;
+            }
+            
+            tree-internal .tree .folding.node-expanded {
+              cursor: pointer;
+              
+              color: #422bc2;
+             
+              font-size: 1.5em;
+              background-color: rgb(197, 24, 24);
+              font-weight: bold;
+              
+            }
+            
+            
+            tree-internal .tree .folding.node-expanded:before {
+              content: '\25BC';
+              color: #757575;
+              padding: 100px;
+              //background-color: coral;
+              margin:50px;
+              cursor: crosshair;
+              font-size: 1.5em;
+            }
+            
+            tree-internal .tree .folding.node-empty {
+              color: #212121;
+              text-align: center;
+              font-size: 0.89em;
+            }
+            
+            tree-internal .tree .folding.node-empty:before {
+              content: '\25B6';
+              color: #757575;
+            }
+            
+            tree-internal .tree .folding.node-leaf {
+              color: #212121;
+              text-align: left;
+              font-size: 0.89em;
+            }
+            
+            tree-internal .tree .folding.node-leaf:before {
+              content: '\25CF';
+              color: #757575;
+            }
+            
+            tree-internal ul.rootless {
+              padding: 0;
+              list-style: none;
+            }
+            
+            tree-internal div.rootless {
+              display: none !important;
+            }
+            
+            tree-internal .loading-children:after {
+              content: ' loading ...';
+              color: #6a1b9a;
+              font-style: normal;
+              font-size: 0.9em;
+              animation-name: loading-children;
+              animation-duration: 2s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite;
+            }
+            
+            @keyframes loading-children {
+              0%    { color: #f3e5f5; }
+              12.5% { color: #e1bee7; }
+              25%   { color: #ce93d8; }
+              37.5% { color: #ba68c8; }
+              50%   { color: #ab47bc; }
+              62.5% { color: #9c27b0; }
+              75%   { color: #8e24aa; }
+              87.5% { color: #7b1fa2; }
+              100%  { color: #6a1b9a; }
+            }
+            
+            ion-item-divider {
+              text-align: center;
+            }
+            
+            // buttons configs
+.btn-facebook {
+  background-color: #3B5999;
+}
+
+.btn-twitter {
+  background-color: #00ACEE;
+}
+
+.btn-gplus {
+  background-color: #E04006
+}
+.just_text_size{  
+  font: 16px arial;
+  color: color($colors,ycBlue);
+        
+}
+           
+.text-primary {
+  color: color($colors, primary);
+}
+
+
+.toprowwithlogo{
+  width: 90% !important;
+  height: 20% !important;
+}
+.remembermerow{
+  width: 90% !important;
+  height: 20% !important;
+}
+.outerDivWithLogo{
+  height: 100% !important;
+  width: 100% !important;
+  background-color: $color_primary;
+  padding-left:10%;
+  padding-right:10%;
+  padding-bottom:5%;
+  padding-top:10%;
+}
+.margin_left_for_text{
+  margin-left:2px !important;
+}
+.custom_checkbox{
+  width: 1px !important;
+}
+.list-form {
+  height: 50% !important;
+  width: 100% !important;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  ion-item {
+    background: none;
+    padding: 0;
+
+    &:first-child {      
+      border: none;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    ion-label {
+      font-size: 1em;
+      color: $color_black;
+      
+    }
+
+    ion-input {
+      border:  1px solid black;
+      color: $color_black;
+    }
+  }
+}
+

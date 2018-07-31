@@ -1,0 +1,32 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title> {{ 'Select_Language' | translate }}  </ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+		
+		<button item-end round small ion-button color="ycBlue" (click)="goback()">
+				<ion-icon name="home"></ion-icon> {{ 'home' | translate }}  
+			  </button>
+		
+			</ion-card>
+			  
+			<ion-card>
+	<ion-list>
+		<ion-item-group radio-group (ionChange)="applyLanguage()" [(ngModel)]="selectedLanguage">
+			<ion-item-divider color="itemheader">{{ 'project_language' | translate }}   </ion-item-divider>
+			<ion-item *ngFor="let lang of languages">
+				<ion-label>{{lang.name}}</ion-label>
+				<ion-radio [value]="lang.code"></ion-radio>
+			</ion-item>
+		</ion-item-group>
+	
+		
+	</ion-list>
+</ion-card>
+</ion-content>

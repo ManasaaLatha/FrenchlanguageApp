@@ -1,0 +1,32 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+          <ion-title>{{ 'menu' | translate }}</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+    
+    
+     
+    
+    <ion-content> 
+    <!--
+       <button ion-item  menu-close (click)="openLanguageSelectionPage()">
+        <ion-icon name="globe" item-left></ion-icon> {{ 'project_language' | translate }}
+     </button>
+    -->
+
+
+    <button ion-item  menu-close (click)="openStatic1Page()">
+      <ion-icon name="home" item-left></ion-icon> {{ 'static1' | translate }}
+    </button>
+
+
+     <button ion-item  menu-close (click)="openHomePae()">
+      <ion-icon name="home" item-left></ion-icon> {{ 'static' | translate }}
+    </button>
+
+  </ion-content>
+    </ion-menu>
+    <ion-nav [root]="rootPage"  #content></ion-nav>
+    

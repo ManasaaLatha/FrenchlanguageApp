@@ -1,0 +1,194 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+$colors: (
+  //primary:    #8EA32F,
+  primary:    rgb(221, 38, 38),
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  google:     #c04f4f,
+  //light:      rgb(173, 39, 131),
+  light_old:#008CFF,
+  light:rgb(48, 140, 233),
+pink_color:      rgb(207, 80, 165),
+  dark:       #222,
+  
+  color2: #1917AC,
+  fb: rgb(66, 66, 126),
+  color3 : white,
+  color4: rgb(73, 128, 25),
+  ratingVALUEbutton: rgb(73, 128, 25),
+  
+  //ycBlue: rgb(85, 85, 85),
+  //ycBlue: rgb(56, 51, 51),
+  //ycBlue: rgb(129, 24, 24),
+  ycBlue:#ff1493,// rgb(221, 38, 38)// green #8EA32F //blue #008CFF
+  ycBlue_regsel: #008CFF,
+  custombuttColor: rgb(14, 12, 12),
+  sortfiltergridlistbuttonsbackgColor: rgb(133, 127, 127),
+  wishlistcartbuttonsbackgColor: rgb(133, 127, 127),
+  //buynow: rgb(158, 90, 73),
+  buynow: rgb(187, 125, 9),
+  customfooterButtnColor:white,
+  itemheader:rgb(110, 158, 202),
+  rowalternate:rgb(218, 229, 238),
+  sectiondividerinproductdetail:rgb(218, 229, 238),
+  eachgridbackground:rgb(218, 229, 238),
+  light_blue_bg:rgb(69, 133, 185),
+  light_red:#e96e26,
+
+
+);
+  
+////$navbar-ios-height:10px;
+//$navbar-md-height:10px;
+//$navbar-wp-height:10px;
+//$item-md-divider-background: color($colors, ycBlue);
+//$item-md-divider-color:color($colors, ycBlue);
+//$list-md-border-color:color($colors, ycBlue);
+$bari-category-backgroud-color:rgba(15, 41, 41, 0.582);
+$toolbar-background-old: #008CFF;
+$toolbar-background: color($colors, ycBlue);
+$range-ios-slider-height:50px;
+$range-md-slider-height:50px;
+$range-md-knob-width:50px;
+$segment-button-md-opacity:0.5;
+$segment-button-md-opacity-activated:5;
+$segment-button-ios-background-color:color($colors, light);
+$segment-button-md-border-color-activated:color($colors, light);
+$segment-button-md-text-color-activated:color($colors, light);
+$color_primary:color($colors, ycBlue);
+$text-input-md-highlight-color:false;
+$color_black:color($colors, custombuttColor);
+$range-md-knob-height:$range-md-knob-width;
+$range-md-bar-active-background-color:color($colors, ycBlue);
+$range-md-knob-background-color:$range-md-bar-active-background-color;
+$menu-width:250px;
+$range-md-knob-min-background-color:rgb(204, 197, 197);
+$text-color: black;
+
+//$label-md-text-color: rgb(24, 24, 218);
+$toggle-ios-width:100px;
+$toggle-md-active-color:color($colors, ycBlue);
+$toggle-md-track-width:100px;
+$infinite-scroll-loading-text-color:white;
+.c_label{
+  color:rgb(24, 24, 218);
+  font-size: 12px;
+  word-wrap: normal;
+  
+}
+// Named Color Variables
+
+//@import url(http://fonts.googleapis.com/css?family=Oxygen);
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+//@import url(http://fonts.googleapis.com/css?family=Oxygen);
+//$font-family-base: "Oxygen", sans-serif !default;
+//$font-family-base: "Pacifico", cursive !default;
+
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maven Pro"), local("Maven-Pro-Regular"), url("#{$font-path}/MavenPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Maven Pro Medium"), local("Maven-Pro-Medium"), url("#{$font-path}/MavenPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maven Pro Bold"), local("Maven-Pro-Bold"), url("#{$font-path}/MavenPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Maven Pro Ultra Bold"), local("Maven-Pro-Regular-Ultra-Bold"), url("#{$font-path}/MavenPro-Black.ttf") format("truetype");
+}
+
+// $font-family-base: "Maven Pro"; THIS DOES NOT WORK!
+$font-family-md-base: "Maven Pro"; // THIS DOES WORK
+$font-family-ios-base: "Maven Pro"; // THIS DOES WORK
+$font-family-wp-base: "Maven Pro"; // THIS DOES WORK
+
+
+
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
