@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-
-import { FormBuilder} from '@angular/forms';
+import { NavController } from 'ionic-angular';
 
 import { TranslateService } from 'ng2-translate';
-import { Storage } from '@ionic/storage';
+
 
 import { IonicPage } from 'ionic-angular';
 
-import { Config } from '../config';
 
+import {DomSanitizer} from '@angular/platform-browser';
 
-interface aboutCard{id:'',header:'',content:'',add_edit:'add'}
-   
 
 @IonicPage({
 	name : 'static1'
@@ -23,20 +18,23 @@ interface aboutCard{id:'',header:'',content:'',add_edit:'add'}
 })
 
 export class static1  {
+  
+ 
+  private pagename:any
+  constructor(public translate: TranslateService,    public nav: NavController,           
+    public sanitizer:DomSanitizer) {
+
+    var userlan=window.navigator.language
+
+    if(userlan && userlan.indexOf("-")!=-1){        
+          var _fiel_arr = userlan.split("-");        
+          userlan=_fiel_arr[0]          
+    }
+      var srcName  = "assets/static/"+"static-"+userlan+".html"
+
+      this.pagename = this.sanitizer.bypassSecurityTrustResourceUrl(srcName);   
 
 
-  private selectedLanguage = "fr";  
-  private aboutCardList:any=[]
-  
-  
-  constructor(public translate: TranslateService,public storage:Storage,    public nav: NavController,    
-       
-    public navParams: NavParams,public form:FormBuilder) {
-      
-    
-      this.translate.use(Config.defaultLanguage); 
-      
-      
               
     }
     

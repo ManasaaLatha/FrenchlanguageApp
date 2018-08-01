@@ -25,8 +25,11 @@ export class MyApp {
     });
     this.rootPage = 'static1';
    
+
+    
+
     this.translate.use(this.selectedLanguage);
-   
+    console.log("user browser language is "+window.navigator.language)
   }
 
   private openLanguageSelectionPage(){
